@@ -1,0 +1,71 @@
+.product_cont {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+.product_cont_child {
+  width: 30%;
+  height: 450px;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.product_cont_child > div {
+  position: relative;
+  width: 90%;
+  height: 6%;
+  display: flex;
+}
+.product_img {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.product_img_blured {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  display: block;
+  position: relative;
+  filter: blur(4px);
+}
+.centered {
+  position: relative;
+  display: -webkit-box;
+  color: #8d8f9a;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  width: 60%;
+  bottom: 50%;
+  left: 20%;
+  height: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .product_cont {
+    width: 100%;
+  }
+  .product_cont_child {
+    width: 30%;
+    height: 300px;
+    font-size: 0.9rem;
+  }
+  .centered {
+    font-size: 0.9rem;
+  }
+  .centered {
+    bottom: 30%;
+    left: 8%;
+    font-size: 0.6rem;
+  }
+}
